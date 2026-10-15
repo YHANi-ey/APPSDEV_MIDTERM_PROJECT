@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DummyHub SPA</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header / App Shell -->
+  <header class="app-header">
+    <div class="logo-container">
+      <a href="#/" class="logo">DummyHub</a>
+    </div>
+    <nav class="app-nav" id="app-nav">
+      <a href="#/" class="nav-link" data-route="dashboard">Dashboard</a>
+      <a href="#/shop" class="nav-link" data-route="shop">Shop</a>
+      <a href="#/cart" class="nav-link" data-route="cart">
+        Cart <span id="cart-badge" class="badge">0</span>
+      </a>
+      <a href="#/recipes" class="nav-link" data-route="recipes">Recipes</a>
+      <a href="#/community" class="nav-link" data-route="community">Community</a>
+      <a href="#/people" class="nav-link" data-route="people">People</a>
+      <a href="#/tasks" class="nav-link" data-route="tasks">Tasks</a>
+    </nav>
+    <div class="user-area" id="user-area">
+      <!-- Injected dynamically via state listener -->
+    </div>
+  </header>
+
+  <!-- Dynamic Router Outlet -->
+  <main id="app" class="app-content"></main>
+
+  <!-- Semantic Footer -->
+  <footer class="app-footer">
+    <p>&copy; 2026 DummyHub SPA - Applications Development and Emerging Technologies</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
